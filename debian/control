@@ -1,8 +1,9 @@
 Source: patch
 Section: vcs
 Priority: standard
-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
-Build-Depends: debhelper (>= 7), ed
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Build-Depends: debhelper (>= 7), ed, dh-autoreconf
 Standards-Version: 3.9.6
 Homepage: http://savannah.gnu.org/projects/patch/
 Vcs-Git: git://git.debian.org/collab-maint/patch.git

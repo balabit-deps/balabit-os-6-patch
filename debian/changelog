@@ -1,3 +1,23 @@
+patch (2.7.5-1ubuntu0.16.04.1) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: Out-of-bounds access
+    - debian/patches/CVE-2016-10713.patch: fix in
+      src/pch.c.
+    - CVE-2016-10713
+  * SECURITY UPDATE: Input validation vulnerability
+    - debian/patches/CVE-2018-1000156.patch: fix in
+      src/pch.c adding tests in Makefile.in, tests/ed-style.
+    - debian/patches/0001-Fix-ed-style-test-failure.patch:
+      fix test.
+    - CVE-2018-1000156
+  * SECURITY UPDATE: NULL pointer dereference
+    - debian/patches/CVE-2018-6951.patch: fix in src/pch.c.
+    - CVE-2018-6951
+  * Adds dh_autoreconf to asure it will use the right automake, also adding
+    dh_autoreconf as build-depend.
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Mon, 09 Apr 2018 12:16:54 -0300
+
 patch (2.7.5-1) unstable; urgency=medium
 
   * New upstream release.

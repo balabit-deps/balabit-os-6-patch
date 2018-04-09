@@ -25,6 +25,7 @@ endif
 
 configure: configure-stamp
 configure-stamp:
+	dh_autoreconf
 	dh_testdir
 	CFLAGS="$(CFLAGS)" ac_cv_sys_long_file_names=yes ac_cv_path_ED=ed \
 		./configure $(CONFFLAGS) --prefix=/usr --mandir=\$${prefix}/share/man
@@ -42,6 +43,7 @@ build-stamp: configure-stamp
 	touch build-stamp
 
 clean:
+	dh_autoreconf_clean
 	dh_testdir
 	[ ! -f Makefile ] || $(MAKE) distclean
 	dh_clean build-stamp configure-stamp .version
