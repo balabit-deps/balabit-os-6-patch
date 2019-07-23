@@ -6,3 +6,5 @@ CVE-2016-10713.patch
 CVE-2018-6951.patch
 CVE-2018-1000156.patch
 0001-Fix-ed-style-test-failure.patch
+CVE-2019-13636.patch
+CVE-2019-13638.patch
